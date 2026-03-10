@@ -3,3 +3,5 @@ eval "$(starship init zsh)"
 alias ls='eza --icons --group-directories-first'
 alias ll='eza -la --icons --group-directories-first --git'
 alias rm=gomi
+
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
