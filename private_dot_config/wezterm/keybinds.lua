@@ -13,6 +13,18 @@ return {
     { key = "Tab", mods = "CTRL", action = act.ActivateTabRelative(1) },
     { key = "Tab", mods = "SHIFT|CTRL", action = act.ActivateTabRelative(-1) },
     { key = "v", mods = "SUPER", action = act.PasteFrom("Clipboard") },
+    { key = "d", mods = "LEADER", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
+    { key = "r", mods = "LEADER", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
+    { key = "h", mods = "LEADER", action = act.ActivatePaneDirection("Left") },
+    { key = "l", mods = "LEADER", action = act.ActivatePaneDirection("Right") },
+    { key = "k", mods = "LEADER", action = act.ActivatePaneDirection("Up") },
+    { key = "j", mods = "LEADER", action = act.ActivatePaneDirection("Down") },
+    { key = "x", mods = "LEADER", action = act({ CloseCurrentPane = { confirm = true } }) },
+    { key = "[", mods = "LEADER", action = act.ActivateCopyMode },
+    -- コピー
+    { key = "c", mods = "SUPER", action = act.CopyTo("Clipboard") },
+    -- 貼り付け
+    { key = "v", mods = "SUPER", action = act.PasteFrom("Clipboard") },
   },
   key_tables = {
     copy_mode = {
