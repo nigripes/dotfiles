@@ -8,12 +8,11 @@ return {
 		  mods = "LEADER",
 		  action = act.ShowLauncherArgs({ flags = "WORKSPACES", title = "Select workspace" }),      
 	  },
-	{ key = "d", mods = "LEADER", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
-	{ key = "r", mods = "LEADER", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
-	{ key = "Tab", mods = "CTRL", action = act.ActivateTabRelative(1) },
-	{ key = "Tab", mods = "SHIFT|CTRL", action = act.ActivateTabRelative(-1) },
-	{ key = "v", mods = "SUPER", action = act.PasteFrom("Clipboard") },
-
+    { key = "d", mods = "LEADER", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
+    { key = "r", mods = "LEADER", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
+    { key = "Tab", mods = "CTRL", action = act.ActivateTabRelative(1) },
+    { key = "Tab", mods = "SHIFT|CTRL", action = act.ActivateTabRelative(-1) },
+    { key = "v", mods = "SUPER", action = act.PasteFrom("Clipboard") },
   },
   key_tables = {
     copy_mode = {
