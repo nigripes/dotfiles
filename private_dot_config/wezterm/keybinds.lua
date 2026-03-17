@@ -8,6 +8,7 @@ return {
 		  mods = "LEADER",
 		  action = act.ShowLauncherArgs({ flags = "WORKSPACES", title = "Select workspace" }),      
 	  },
+    { key = "w", mods = "SUPER", action = act({ CloseCurrentTab = { confirm = true } }) },
     { key = "d", mods = "LEADER", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
     { key = "r", mods = "LEADER", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
     { key = "Tab", mods = "CTRL", action = act.ActivateTabRelative(1) },
